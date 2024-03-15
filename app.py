@@ -17,7 +17,7 @@ st.set_page_config(page_title="csvGPT", page_icon="📄", layout="wide")
 # Add header with title and description
 st.markdown(
     '<p style="display:inline-block;font-size:40px;font-weight:bold;">📊csvGPT </p>'
-    ' <p style="display:inline-block;font-size:16px;">업로드한 CSV files내용에 대한 질문하기</p>',
+    ' <p style="display:inline-block;font-size:16px;">업로드한 CSV file 내용에 대한 질문하기</p>',
     unsafe_allow_html=True
 )
 
