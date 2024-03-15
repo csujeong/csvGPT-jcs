@@ -17,10 +17,7 @@ st.set_page_config(page_title="csvGPT", page_icon="📄", layout="wide")
 # Add header with title and description
 st.markdown(
     '<p style="display:inline-block;font-size:40px;font-weight:bold;">📊csvGPT </p>'
-    ' <p style="display:inline-block;font-size:16px;">csvGPT is tool that uses AI-powered '
-    'natural language processing to analyze and provide insights on CSV data. Users can '
-    'upload CSV files, view the data, and have interactive conversations with the AI model '
-    'to obtain valuable information and answers related to the uploaded data <br><br></p>',
+    ' <p style="display:inline-block;font-size:16px;">업로드한 CSV files내용에 대한 질문하기</p>',
     unsafe_allow_html=True
 )
 
@@ -46,7 +43,7 @@ if input_csv is not None:
         input_text = st.text_area("Enter your query")
 
         if input_text is not None:
-            if st.button("Chat with CSV"):
+            if st.button("CSV화일에 대한 질문하기"):
                 st.info("Your Query: " + input_text)
                 result = chat_with_csv(data, input_text)
                 st.success(result)
