@@ -39,7 +39,7 @@ if input_csv is not None:
         st.dataframe(data, use_container_width=True)
 
     with col2:
-        st.info("Chat Below")
+        st.info("채팅을 시작하세요")
         input_text = st.text_area("Enter your query")
 
         if input_text is not None:
